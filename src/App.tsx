@@ -1,10 +1,10 @@
+import Header from './components/Header/Header.tsx';
 import './App.css'
-
 function App() {
 
   return (
-    <div className="mx-auto min-h-screen relative">
-
+    <div className="w-full bg-white  mx-auto min-h-screen relative">
+        <Header />
     </div>
   )
 }
