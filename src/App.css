@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+
   --color-black: #27272A;
   --color-grey-dark: #696969;
   --color-grey-light: #E5E7EB;
@@ -10,14 +12,31 @@
   --color-primary: #7E3AF2;
   --color-danger: #E02424;
 
-  --font-sans: "Montserrat", system-ui, sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --text-h1-desktop: 3.75rem;
+  --text-h2: 2rem;
+  --text-h3: 1.5rem;
+  --text-subtitle-desktop: 1.25rem;
+  --text-subtitle-2-desktop: 1rem;
+  --text-body-desktop: 1.25rem;
+  --text-body-2: 1rem;
 
-  --font-size-h1: 3.75rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.5rem;
-  --font-size-subtitle: 1.25rem;
-  --font-size-subtitle-2: 1rem;
-  --font-size-body: 1.25rem;
-  --font-size-body-2: 1rem;
+  --text-h1: 1.5rem;
+  --text-subtitle: 1.25rem;
+  --text-subtitle-2: 0.875rem;
+  --text-body: 0.875rem;
+
+  --font-weight-h1: 700;
+  --font-weight-h2: 700;
+  --font-weight-h3: 600;
+  --font-weight-subtitle: 600;
+  --font-weight-subtitle2: 600;
+  --font-weight-body: 400;
+  --font-weight-body-2: 400;
+
+  --font-weight-h1-mobile: 600;
+  --font-weight-subtitle-mobile: 700;
+  --font-weight-subtitle-2-mobile: 600;
+  --font-weight-body-mobile: 400;
+
 }
+

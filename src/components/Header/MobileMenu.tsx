@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import FocusLock from 'react-focus-lock';
-import MenuIcon from "../icons/MenuIcon.tsx";
+import MenuIcon from "../icons/MenuIcon";
 
 interface MobileMenuProps {
     isOpen: boolean;

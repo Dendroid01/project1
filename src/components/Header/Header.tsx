@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import LogoIcon from '../icons/LogoIcon.tsx';
-import MenuIcon from '../icons/MenuIcon.tsx';
-import MobileMenu from './MobileMenu.tsx'
+import LogoIcon from '../icons/LogoIcon';
+import MenuIcon from '../icons/MenuIcon';
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="w-full bg-white py-4 px-4 flex justify-between items-center">
+            <header className="w-full bg-white py-4 px-4 flex justify-between items-center  mb-6 border-b border-grey-light">
                 <LogoIcon size={35} className="text-black" aria-hidden="true" focusable="false"/>
                 <button
                     onClick={toggleOpen}
