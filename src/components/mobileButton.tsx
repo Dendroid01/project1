@@ -21,6 +21,8 @@ export const Button = ({
          rounded-full
          font-subtitle-2
          font-semibold
+         z-999
+         w-fit
                   
          hover:bg-[#6C2BD9]
          

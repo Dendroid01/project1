@@ -1,4 +1,4 @@
-export const InterestData = [
+export const interestData = [
     {
         id: 1,
         title: 'Music',
@@ -33,4 +33,4 @@ export const InterestData = [
     }
 ];
 
-export default InterestData
+export default interestData

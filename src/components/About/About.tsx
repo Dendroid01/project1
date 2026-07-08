@@ -1,6 +1,7 @@
 import backgroundImage from '../../assets/backgroundImage.png';
 import aboutImage from '../../assets/photo-about.png';
-import InterestList from "./InterestList.tsx";
+import InterestList from "./Interest/InterestList";
+import EducationExperience from "./Experience/EducationExperience";
 
 const About = () => {
     return (
@@ -17,7 +18,7 @@ const About = () => {
                     <div className="flex flex-col gap-6 mb-6">
                         <hr className="w-6 border border-lavender m-0"/>
                         <p className="text-body font-regular text-grey-dark mt text-justify">
-                            <span className="text-subtitle-2 font-semibold text-black ">Nick Richardson</span> -
+                            <span className="text-subtitle-2 font-semibold text-black">Nick Richardson</span> -
                             specialist
                             in Frontend
                             development. Clear code is my passion. Solving issues
@@ -27,6 +28,7 @@ const About = () => {
                 </div>
             </section>
             <InterestList/>
+            <EducationExperience/>
         </>
     )
         ;

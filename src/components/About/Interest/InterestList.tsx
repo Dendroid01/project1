@@ -1,5 +1,5 @@
-import InterestItem from './InterestItem';
-import InterestData from './InterestData';
+import InterestItem from './InterestItem.tsx';
+import interestData from './InterestData.tsx';
 
 const InterestList = () => {
     return (
@@ -7,7 +7,7 @@ const InterestList = () => {
         <section className="flex flex-col px-4 mb-12 gap-7">
             <h2 className="text-subtitle font-semibold">Interests</h2>
             <div className="flex flex-col gap-6">
-                {InterestData.map((interest) => (
+                {interestData.map((interest) => (
                     <InterestItem
                         key={interest.id}
                         icon={interest.icon}
