@@ -1,10 +1,10 @@
 import Blob from './Blob';
-import photoMobile from '../../assets/photo-mobile.png';
+import photoMobile from '../../assets/photo.png';
 import Button from '../mobileButton';
 
 const Hero = () => {
     return (
-            <section className="flex flex-col px-4 mb-12">
+            <section id="main" className="flex flex-col px-4 mb-12">
                 <div className="flex flex-col gap-1 mb-9">
                     <h1 className="text-h3 font-bold text-black text-justify">
                         Hey, I'm Nick

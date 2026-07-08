@@ -13,32 +13,31 @@ export const Button = ({
     return (
         <button
             className={`
-         px-3 py-2 
-         gap-2
-         flex items-center justify-center
-         bg-lavender
-         text-white
-         rounded-full
-         font-subtitle-2
-         font-semibold
-         z-999
-         w-fit
-                  
-         hover:bg-[#6C2BD9]
-         
-         active:border-2
-         active:border-[#CABFFD]
-         active:scale-100
-         
-         disabled:bg-grey-light
-         disabled:text-grey-dark
-         
-         disabled:active:border-none
-        disabled:active:scale-100
-        disabled:focus:ring-0
-        disabled:focus:outline-none
-        
-        ${className}
+  px-3 py-2 
+  gap-2
+  flex items-center justify-center
+  bg-lavender
+  text-white
+  rounded-full
+  font-subtitle-2
+  font-semibold
+  relative
+  z-30
+  w-fit
+  box-border
+  appearance-none
+  hover:bg-[#6C2BD9]
+  border-2 border-transparent
+  active:border-[#CABFFD]
+  focus:outline-none
+
+  disabled:bg-grey-light
+  disabled:text-grey-dark
+  disabled:active:border-transparent
+  disabled:focus:ring-0
+  disabled:focus:outline-none
+
+  ${className}
       `}
             disabled={disabled}
             {...props}

@@ -10,6 +10,18 @@ interface MobileMenuProps {
 const MobileMenu: React.FC<MobileMenuProps> = ({isOpen, onClose}) => {
 
     useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
+
+    useEffect(() => {
         if (!isOpen) return;
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') onClose();
@@ -44,15 +56,15 @@ const MobileMenu: React.FC<MobileMenuProps> = ({isOpen, onClose}) => {
 
                     <div className="pt-20 px-6">
                         <nav className="flex flex-col space-y-6">
-                            <a href="#"
+                            <a href="#main"
                                className="text-body-2 font-medium text-grey-dark">
                                 Main
                             </a>
-                            <a href="#"
+                            <a href="#about"
                                className="text-body-2 font-medium text-grey-dark">
                                 About
                             </a>
-                            <a href="#"
+                            <a href="#contact"
                                className="text-body-2 font-medium text-grey-dark">
                                 Get in touch
                             </a>

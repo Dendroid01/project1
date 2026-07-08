@@ -6,7 +6,7 @@ import EducationExperience from "./Experience/EducationExperience";
 const About = () => {
     return (
         <>
-            <section className="flex flex-col px-4 mb-6 gap-9">
+            <section id="about" className="flex flex-col px-4 mb-6 gap-9">
                 <h2 className="text-subtitle font-semibold">About me</h2>
                 <div className="flex flex-col items-center gap-9">
                     <div

@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="w-full bg-white py-4 px-4 flex justify-between items-center  mb-6 border-b border-grey-light">
+            <header className="w-full bg-white py-4 px-4 flex justify-between items-center  mb-6 border-b border-grey-light fixed z-40">
                 <LogoIcon size={35} className="text-black" aria-hidden="true" focusable="false"/>
                 <button
                     onClick={toggleOpen}
