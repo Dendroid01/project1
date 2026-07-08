@@ -1,10 +1,11 @@
 import backgroundImage from '../../assets/backgroundImage.png';
 import aboutImage from '../../assets/photo-about.png';
+import InterestList from "./InterestList.tsx";
 
 const About = () => {
     return (
         <>
-            <section className="flex flex-col px-4 mb-12 gap-9">
+            <section className="flex flex-col px-4 mb-6 gap-9">
                 <h2 className="text-subtitle font-semibold">About me</h2>
                 <div className="flex flex-col items-center gap-9">
                     <div
@@ -25,6 +26,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <InterestList/>
         </>
     )
         ;
