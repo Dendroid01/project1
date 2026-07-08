@@ -1,31 +1,41 @@
-const Blob = () => {
+import { useId } from 'react';
+
+interface BlobProps {
+    viewBox?: string;
+    className?: string;
+}
+
+const Blob = ({ viewBox = "", className = "" }: BlobProps) => {
+    const uid = useId().replace(/:/g, "");
+    const patternId = `pattern-${uid}`;
+    const imageId = `image-${uid}`;
+
     return (
         <svg
-            width="236"
-            height="271"
-            viewBox="0 0 236 271"
+            viewBox={viewBox}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute right-0 top-0"
+            className={className}
+            preserveAspectRatio="xMidYMid meet"
         >
             <path
                 d="M185.178 30.2396C225.622 -11.2987 292.8 -9.84983 331.415 33.3935L450.375 166.61C504.825 227.586 467.082 324.584 385.74 332.721L110.24 360.279C17.3874 369.567 -36.4596 257.874 28.6379 191.015L185.178 30.2396Z"
-                fill="url(#pattern0_31_3582)"
+                fill={`url(#${patternId})`}
             />
             <defs>
                 <pattern
-                    id="pattern0_31_3582"
+                    id={patternId}
                     patternContentUnits="objectBoundingBox"
                     width="1"
                     height="1"
                 >
                     <use
-                        xlinkHref="#image0_31_3582"
+                        xlinkHref={`#${imageId}`}
                         transform="matrix(0.000353607 0 0 0.000605929 0 -0.0710883)"
                     />
                 </pattern>
                 <image
-                    id="image0_31_3582"
+                    id={imageId}
                     width="2828"
                     height="1885"
                     preserveAspectRatio="none"

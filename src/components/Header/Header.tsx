@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <>
             <header
-                className="w-full bg-white py-3.5 px-4 md:px-10 flex justify-between items-center  mb-6 border-b border-grey-light sticky top-0 z-40">
+                className="w-full bg-white py-3.5 px-4 md:px-10 flex justify-between items-center  mb-7 md:mb-11 border-b border-grey-light sticky top-0 z-40">
                 <LogoIcon size={35} className="text-black" aria-hidden="true" focusable="false"/>
 
                 <nav className="hidden md:flex flex-row items-center justify-end gap-6">
