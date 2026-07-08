@@ -4,11 +4,11 @@ import Button from '../mobileButton';
 
 const Hero = () => {
     return (
-            <section className="flex flex-col px-4 ">
+            <section className="flex flex-col px-4 mb-12">
                 <div className="flex flex-col gap-1 mb-9">
-                    <h2 className="text-h3 font-bold text-black text-justify">
+                    <h1 className="text-h3 font-bold text-black text-justify">
                         Hey, I'm Nick
-                    </h2>
+                    </h1>
                     <p className="text-body font-regular text-grey-dark text-justify">
                         Frontend developer
                     </p>
