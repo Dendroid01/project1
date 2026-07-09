@@ -10,12 +10,15 @@ const experienceData = [
         period: '2006 - 2007',
         title: 'Junior Frontend developer',
         company: 'Facebook',
+        mdTitle: 'Frontend development courses',
+        mdCompany: 'Stepik',
     },
     {
         id: 3,
         period: '2000 - 2005',
         title: 'Frontend developer',
         company: 'Stanford University',
+        mdCompany: 'Saint Petersburg State University',
     },
 ];
 
