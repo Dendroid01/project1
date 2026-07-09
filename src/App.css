@@ -25,18 +25,16 @@
   --text-subtitle-2: 0.875rem;
   --text-body: 0.875rem;
 
-  --font-weight-h1: 700;
+  --font-weight-h1-desktop: 700;
   --font-weight-h2: 700;
   --font-weight-h3: 600;
-  --font-weight-subtitle: 600;
+  --font-weight-subtitle-desktop: 600;
   --font-weight-subtitle2: 600;
   --font-weight-body: 400;
   --font-weight-body-2: 400;
 
   --font-weight-h1-mobile: 600;
-  --font-weight-subtitle-mobile: 700;
-  --font-weight-subtitle-2-mobile: 600;
-  --font-weight-body-mobile: 400;
+  --font-weight-subtitle: 700;
 
 }
 
