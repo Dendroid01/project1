@@ -5,7 +5,7 @@ import Button from '../mobileButton';
 
 const Hero = () => {
     return (
-        <section id="main" className="flex min-h-118.75 flex-col pl-4 md:pl-10 lg:pl-21.25 mb-12 md:mb-4">
+        <section id="main" className="flex min-h-118.75 flex-col pl-4 md:pl-10 lg:pl-21.25 mb-12 md:mb-4 lg:mb-25">
             <div className="flex flex-col gap-1 mb-9 lg:mb-23">
                 <h1 className="text-h3 md:text-h1-desktop font-bold text-black text-justify">
                     Hey, I'm Nick
