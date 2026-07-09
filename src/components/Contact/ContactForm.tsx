@@ -63,7 +63,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="w-75 h-156.25 bg-white rounded-2xl px-1.5 md:px-8 py-12">
+        <div className="w-75 md:w-178 lg:w-191 h-156.25 md:h-141.75 lg:h-141.75 bg-white rounded-2xl px-1.5 md:px-8 lg:px-12 py-12">
             <h2 className="text-subtitle md:text-h2 font-semibold md:font-bold text-black text-center md:text-left mb-9 md:mb-12">
                 Let's discuss your project
             </h2>
@@ -124,7 +124,7 @@ const ContactForm = () => {
                 </div>
 
                 <Button disabled={isSubmitting || isSubmitSuccessful}>
-                    {isSubmitting ? 'Sending...' : 'Get in touch'}
+                    {isSubmitting ? 'Sending...' : 'Submit'}
                 </Button>
 
             </form>

@@ -3,7 +3,7 @@ import backgroundImage from "../../assets/backgroundImage.png"
 
 const About = () => {
     return (
-        <section id="contact" className="flex h-188.25 justify-center items-center"
+        <section id="contact" className="flex h-188.25 md:h-177 justify-center items-center"
              style={{
                  backgroundImage: `url(${backgroundImage})`,
                  backgroundSize: 'cover',
