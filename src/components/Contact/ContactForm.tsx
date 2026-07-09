@@ -14,7 +14,8 @@ const UserIcon = ({className = ""}: { className?: string }) => (
 );
 
 const EmailIcon = ({className = ""}: { className?: string }) => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className={`size-6 ${className}`}>
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+         className={`size-6 ${className}`}>
         <path
             d="M4.80029 5.2998H19.2007C19.6853 5.29981 20.1518 5.48486 20.5044 5.81738C20.7789 6.07638 20.9666 6.41025 21.0503 6.77344L11.9995 11.2988L2.94873 6.77344C3.03242 6.41013 3.221 6.07645 3.49561 5.81738C3.84831 5.48465 4.31541 5.29972 4.80029 5.2998Z"
             fill="#currentColor" stroke="currentColor"/>
@@ -62,54 +63,55 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-white rounded-2xl px-1.5 py-12 w-full">
-            <h2 className="text-subtitle font-semibold text-black text-center mb-9">
+        <div className="bg-white rounded-2xl px-1.5 md:px-8 py-12 w-full">
+            <h2 className="text-subtitle md:text-h2 font-semibold md:font-bold text-black text-center md:text-left mb-9 md:mb-12">
                 Let's discuss your project
             </h2>
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 px-4" noValidate>
-                <FormField
-                    id="fullName"
-                    label="Your full name"
-                    required
-                    error={errors.fullName?.message}
-                    icon={<UserIcon className="text-grey-dark group-focus-within:text-lavender"/>}
-                    disabled={isSubmitting || isSubmitSuccessful}
-                >
-                    <input
-                        type="text"
-                        placeholder="Name Surname"
-                        className="w-full bg-transparent outline-none text-black text-body-2 font-regular placeholder:text-grey-dark"
-                        aria-invalid={!!errors.fullName}
-                        {...register('fullName')}
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 md:gap-2 px-4 md:px-0" noValidate>
+                <div className="flex flex-col gap-6 md:flex-row">
+                    <FormField
+                        id="fullName"
+                        label="Your full name"
+                        required
+                        error={errors.fullName?.message}
+                        icon={<UserIcon className="text-grey-dark group-focus-within:text-lavender"/>}
                         disabled={isSubmitting || isSubmitSuccessful}
-                    />
-                </FormField>
+                    >
+                        <input
+                            type="text"
+                            placeholder="Name Surname"
+                            className="w-full bg-transparent outline-none text-black text-body-2 font-regular placeholder:text-grey-dark"
+                            aria-invalid={!!errors.fullName}
+                            {...register('fullName')}
+                            disabled={isSubmitting || isSubmitSuccessful}
+                        />
+                    </FormField>
 
-                <FormField
-                    id="email"
-                    label="Your email"
-                    required
-                    error={errors.email?.message}
-                    icon={<EmailIcon className="text-grey-dark group-focus-within:text-lavender"/>}
-                    disabled={isSubmitting || isSubmitSuccessful}
-                >
-                    <input
-                        type="email"
-                        placeholder="name@example.com"
-                        className="w-full bg-transparent outline-none text-black text-body-2 font-regular placeholder:text-grey-dark"
-                        aria-invalid={!!errors.email}
-                        {...register('email')}
+                    <FormField
+                        id="email"
+                        label="Your email"
+                        required
+                        error={errors.email?.message}
+                        icon={<EmailIcon className="text-grey-dark group-focus-within:text-lavender"/>}
                         disabled={isSubmitting || isSubmitSuccessful}
-                    />
-                </FormField>
-
+                    >
+                        <input
+                            type="email"
+                            placeholder="name@example.com"
+                            className="w-full bg-transparent outline-none text-black text-body-2 font-regular placeholder:text-grey-dark"
+                            aria-invalid={!!errors.email}
+                            {...register('email')}
+                            disabled={isSubmitting || isSubmitSuccessful}
+                        />
+                    </FormField>
+                </div>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="projectDesc"
-                           className={`text-subtitle-2 font-semibold text-black ${(isSubmitting || isSubmitSuccessful) ? 'opacity-50' : ''}`}>
+                           className={`text-subtitle-2 md:text-subtitle-2-desktop font-semibold text-black ${(isSubmitting || isSubmitSuccessful) ? 'opacity-50' : ''}`}>
                         Tell me about your project
                     </label>
                     <div
-                        className={`py-3 px-5 rounded-2xl border border-grey-light bg-white ${(isSubmitting || isSubmitSuccessful) ? 'opacity-50 cursor-not-allowed' : ''}`}>
+                        className={`py-3 px-5 md:mb-8 rounded-2xl border border-grey-light bg-white ${(isSubmitting || isSubmitSuccessful) ? 'opacity-50 cursor-not-allowed' : ''}`}>
                         <textarea
                             id="projectDesc"
                             rows={4}

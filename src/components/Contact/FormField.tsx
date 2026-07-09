@@ -43,16 +43,16 @@ export const FormField = ({
             }`.trim(),
         } as any)
         : children;
-    
+
     return (
         <div className={`flex flex-col gap-2 ${className}`}>
             <label htmlFor={id}
-                   className={`text-subtitle-2 font-semibold text-black`}>
+                   className={`text-subtitle-2 md:text-subtitle-2-desktop font-semibold text-black`}>
                 {label} {required && <span className="text-danger">*</span>}
             </label>
             <div
                 className={`
-        group flex items-center gap-2.5 py-3 px-5 rounded-2xl border transition-colors
+        group flex md:w-78 md:h-13.75 items-center gap-2.5 py-3 px-5 rounded-2xl border transition-colors
         ${disabled
                     ? 'border-grey-light bg-grey-light text-grey-dark cursor-not-allowed opacity-50'
                     : hasError
@@ -65,7 +65,7 @@ export const FormField = ({
                 {childWithProps}
             </div>
             {hasError && (
-                <span id={errorId} className="text-danger text-xs font-semibold">
+                <span id={errorId} className="text-danger text-subtitle-2 font-semibold">
                     {error}
                 </span>
             )}
