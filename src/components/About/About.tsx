@@ -7,7 +7,7 @@ import Button from "../mobileButton.tsx";
 const About = () => {
     return (
         <>
-            <section id="about" className="flex flex-col px-4 mb-6 gap-9 md:gap-20 md:px-10">
+            <section id="about" className="flex flex-col px-4 mb-6 md:mb-10 gap-9 md:gap-20 md:px-10">
                 <h2 className="text-subtitle font-semibold text-black md:text-h2 md:font-bold">About me</h2>
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-9 md:gap-11">
                     <div
