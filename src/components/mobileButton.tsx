@@ -16,7 +16,7 @@ export const Button = ({
   bg-lavender
   text-white
   rounded-full
-  font-subtitle-2 md:font-subtitle2-desktop
+  text-subtitle-2 md:text-subtitle2-desktop
   font-semibold
   relative
   z-30

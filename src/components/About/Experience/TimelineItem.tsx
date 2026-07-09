@@ -8,8 +8,8 @@ interface TimelineItemProps {
 
 const TimelineItem = ({ period, title, company, mdTitle, mdCompany }: TimelineItemProps) => {
     return (
-        <div className="flex flex-row gap-1 md:gap-4 pb-3 border-b border-grey-light md:w-178.5 lg:w-135 md:h-25">
-            <div className="text-body md:text-body-desktop font-regular text-black w-30 md:w-38 h-5 md:h-7.5">{period}</div>
+        <div className="flex flex-row gap-1 md:gap-4 pb-3 border-b border-grey-light w-full md:w-178.5 lg:w-135 md:h-25">
+            <div className="text-body md:text-body-desktop font-regular text-black w-30 flex-shrink-0 md:w-38 h-5 md:h-7.5">{period}</div>
             <div className="flex flex-col gap-2">
                 <h3 className="text-subtitle-2 md:text-subtitle-desktop font-semibold">
                     <span className="md:hidden">{title}</span>

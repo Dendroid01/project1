@@ -17,7 +17,7 @@ const Hero = () => {
 
             <div className="flex flex-col relative h-94.5 md:h-63 lg:h-98 gap-6 md:gap-4 lg:gap-6 ">
                 <hr className="w-6 border-2 border-lavender m-0"/>
-                <p className="text-body md:text-body-desktop w-72.5 md:w-111.25 md:mb-6 lg:mb-8.5 md:h-22.5 font-regular text-grey-dark mt">
+                <p className="text-body md:text-body-desktop w-67 md:w-111.25 md:mb-6 lg:mb-8.5 md:h-22.5 font-regular text-grey-dark mt">
                     Help you to create high-quality digital products that your clients will love and let your
                     business thrive
                 </p>

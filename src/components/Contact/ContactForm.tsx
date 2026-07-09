@@ -63,7 +63,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-white rounded-2xl px-1.5 md:px-8 py-12 w-full">
+        <div className="w-75 h-156.25 bg-white rounded-2xl px-1.5 md:px-8 py-12">
             <h2 className="text-subtitle md:text-h2 font-semibold md:font-bold text-black text-center md:text-left mb-9 md:mb-12">
                 Let's discuss your project
             </h2>
