@@ -11,8 +11,8 @@ export const Button = ({
         className={`
   px-3 md:px-6 py-2 md:py-3
   md:w-47 
-  gap-2 md:gap-3
-  flex items-center justify-center
+  gap-2 md:gap-3 lg:gap-3
+  flex items-center justify-evenly
   bg-lavender
   text-white
   rounded-full
